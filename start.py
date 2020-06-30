@@ -19,19 +19,18 @@ abouts = [
 
 
 @app.route('/')
-def index():
-    return render_template('home.html')
+def main_page():
+    return render_template('index.html')
 
 
 @app.route('/news')
 def news_page():
-    text = 'Привет, я Роза'
-    return render_template('news.html', titel='News', text=text)
+    return render_template()
 
 
 @app.route('/about')
 def about_page():
-    return render_template('about.html',titel='About us', abouts=abouts)
+    return render_template()
 
 
 if __name__ == '__main__':
